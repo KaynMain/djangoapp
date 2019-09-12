@@ -1,7 +1,9 @@
-from django.conf.urls import url path
+from django.urls import path
 
 from . import views
 
-urlspatterns = [
+urlpatterns = [
     path('', views.index, name='index'),
+    path('komunikat/', views.komunikat, name='komunikat'),
+    path('hehe/', views.hehe, name='hehe'),
 ]
